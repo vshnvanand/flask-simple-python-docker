@@ -9,6 +9,6 @@ services:
     container_name: "flask-greet"
     ports:
       - "80:80"
-    command: gunicorn run:app --bind 0.0.0.0:80
+    command: python run.py 
     restart: always
     
