@@ -1,4 +1,14 @@
 version: '3.8'
 
 services:
-  
+ 
+  flask-app:
+    build:
+      context: .
+    image: flask-app
+    container_name: "flask-greet"
+    ports:
+      - "80:80"
+    command: gunicorn run:app --bind 0.0.0.0:80
+    restart: always
+    
