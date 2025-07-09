@@ -20,9 +20,9 @@ pipeline {
         stage('push'){
             steps {
                 script{
-                    echo "Hello-World"
+                    
                     docker_push("flask-app","latest","vshnvanand")
-                    echo "World gone"
+                    
                 }
             }
         }    
@@ -30,6 +30,7 @@ pipeline {
             steps {
                 script{
                     docker_compose() 
+                    echo "sab khatam everything done gone"
                 }
             }
         }
