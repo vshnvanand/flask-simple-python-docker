@@ -1,6 +1,6 @@
 @Library("Shareit") _
 pipeline {
-    agent {label "vinod"}
+    agent {label "babu"}
 
     stages {
         stage('cloning') {
